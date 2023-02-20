@@ -1,21 +1,21 @@
-import {StyleSheet, TextInput} from 'react-native';
+import {StyleSheet} from 'react-native';
 import React from 'react';
+import {TextInput} from 'react-native-paper';
 
 const InputFields = (props: any) => {
-  return <TextInput {...props} style={styles.input} />;
+  return (
+    <TextInput
+      {...props}
+      mode="outlined"
+      outlineColor="#fff"
+      selectionColor="#fff"
+      // activeOutlineColor="#E50914"
+      activeOutlineColor="#fff"
+      style={{marginTop: 15, backgroundColor: '#000'}}
+    />
+  );
 };
 
 export default InputFields;
 
-const styles = StyleSheet.create({
-  input: {
-    height: 40,
-    marginTop: 20,
-    borderWidth: 1,
-    padding: 10,
-    borderColor: '#fff',
-    borderRadius: 5,
-    paddingVertical: 8,
-    width: 300,
-  },
-});
+const styles = StyleSheet.create({});

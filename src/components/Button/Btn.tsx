@@ -10,7 +10,7 @@ const Btn = (props: any) => {
           backgroundColor: props.btnColor,
           alignItems: 'center',
           borderRadius: 5,
-          paddingVertical: 8,
+          paddingVertical: 10,
           marginTop: 30,
         }}
         onPress={props.Press}>

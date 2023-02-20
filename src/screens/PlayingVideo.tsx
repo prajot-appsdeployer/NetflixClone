@@ -8,7 +8,6 @@ import {
   FlatList,
 } from 'react-native';
 import React, {useState, useEffect} from 'react';
-// import VideoPlayer from 'react-native-video-player';
 import VideoPlayer from 'react-native-video-controls';
 import Orientation from 'react-native-orientation-locker';
 
@@ -29,7 +28,7 @@ const PlayingVideo = (props: any) => {
         }}
         navigator={props.navigator}
         controlTimeout={3000}
-        seekColor="#FF0000 "
+        seekColor="#FF0000"
         onBack={() => {
           props.navigation.goBack();
           Orientation.lockToPortrait();

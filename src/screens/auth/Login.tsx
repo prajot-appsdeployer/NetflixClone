@@ -55,25 +55,26 @@ const Login = (props: any) => {
         backgroundColor: 'black',
         padding: 10,
         alignItems: 'center',
+        justifyContent: 'center',
         width: windowWidth,
         height: windowHeight,
       }}>
       <Image
-        style={{marginTop: 130, width: 220, height: 60}}
+        style={{width: 220, height: 60}}
         source={require('../../assets/logo_L.png')}
       />
 
       <View style={{marginTop: 50}}>
         <InputFields
           value={email}
-          placeholder="Enter Email"
+          label="Email"
           onChangeText={(text: any) => setEmail(text)}
           keyboardType="email-address"
           autoCapitalize="none"
         />
         <InputFields
           value={password}
-          placeholder="Enter Password"
+          label="Password"
           secureTextEntry={true}
           onChangeText={(text: any) => setPassword(text)}
           autoCapitalize="none"
