@@ -30,7 +30,10 @@ const PlayingVideo = (props: any) => {
         navigator={props.navigator}
         controlTimeout={3000}
         seekColor="#FF0000 "
-        onBack={() => props.navigation.goBack()}
+        onBack={() => {
+          props.navigation.goBack();
+          Orientation.lockToPortrait();
+        }}
         onEnterFullscreen={() => Orientation.lockToLandscape()}
         onExitFullscreen={() => Orientation.lockToPortrait()}
       />

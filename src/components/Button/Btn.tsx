@@ -7,14 +7,14 @@ const Btn = (props: any) => {
       <TouchableOpacity
         style={{
           width: 300,
-          backgroundColor: '#fff',
+          backgroundColor: props.btnColor,
           alignItems: 'center',
           borderRadius: 5,
           paddingVertical: 8,
           marginTop: 30,
         }}
         onPress={props.Press}>
-        <Text style={{color: '#000'}}>{props.title}</Text>
+        <Text style={{color: props.textColor}}>{props.title}</Text>
       </TouchableOpacity>
     </View>
   );
